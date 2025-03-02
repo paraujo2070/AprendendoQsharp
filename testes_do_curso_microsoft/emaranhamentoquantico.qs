@@ -4,7 +4,9 @@ operation Main() : (Result, Result) {
     use (q1, q2) = (Qubit(), Qubit());
 
     H(q1);
-    
+    Z(q1);
+    H(q2);
+    Z(q2);
     CNOT(q1, q2);
 
     DumpMachine();
